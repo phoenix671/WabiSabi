@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# --- Project-specific additions ---
+
+# secrets (broader than the .env already covered above)
+*.env
+.env.*
+secrets.json
+config/secrets*
+
+# datasets (plant disease images — keep a small sample tracked, ignore the bulk)
+data/
+datasets/
+*.zip
+*.tar.gz
+
+# AI coding tool artifacts (since you're all vibe coding)
+.cursor/
+.aider*
+.claude/
